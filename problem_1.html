@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 1</title>
+</head>
+<body>
+
+<center>
+	
+<br>
+<br>
+	<button onclick="myfunc()" id='button' > Like </button>
+
+	<script type="text/javascript">
+		
+		var temp = 1 ;
+
+		var button = document.getElementById("button");
+
+		function myfunc()
+		{
+			if(temp == 1)
+			{
+				button.innerHTML= "Like";
+				button.style.backgroundcolor="blue"
+				temp=2;
+			}
+			else	
+			{
+				button.innerHTML = "Unlike";
+				temp=1
+			}
+		}
+
+	</script>
+
+</center>
+
+</body>
+</html>

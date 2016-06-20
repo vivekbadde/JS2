@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> problem 3</title>
+</head>
+<body>
+
+
+<center>
+	
+<form id="form1">
+	
+	<input type="text" id="textbox" onkeyup="validate()" onchange="clear()">
+
+</form>
+
+
+<br>
+
+
+<input type="text" id="res">
+
+
+<script type="text/javascript">
+	
+
+	function clear()
+	{
+		document.getElementById("res").text="";
+	}
+
+
+	function validate()
+	{
+		var text = document.getElementById("textbox");
+
+		var input = text.value ;
+
+		var last_element = input.slice(-1);
+
+		if( last_element >= '0' && last_element<= '9')
+		{
+			document.getElementById("res").value += last_element;
+		}
+		else
+		{
+			document.getElementById("res").style.backgroundColor="red";
+		}
+
+
+	}
+
+
+</script>
+
+
+</center>
+
+
+</body>
+</html>
