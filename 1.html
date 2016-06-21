@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1</title>
+</head>
+<body>
+<button onclick="likef()" id='button'> LIKE </button>
+
+<script type="text/javascript">
+var temp=1;
+var button=document.getElementById("button");
+
+function likef(){
+	if(temp==1){
+		button.innerHTML="Like";
+		temp=2;
+	}
+	else{
+		button.innerHTML="UnLike";
+		temp=1;
+	}
+}
+	
+
+</script>
+
+</body>
+</html>

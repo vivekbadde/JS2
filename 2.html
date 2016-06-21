@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2</title>
+</head>
+<body>
+<table id='tableodd' style="width:100%" border="1">
+<tr id="1">
+<td>row1</td></tr>
+<tr id="2">
+<td>row2</td></tr>
+<tr id="3">
+<td>row3</td></tr>
+<tr id="4">
+<td>row4</td></tr>
+<tr id="5">
+<td>row5</td></tr>
+</table>
+<button onclick="myfunction()">Hide Odd Rows</button>
+<script type="">
+		
+		function myfunction()
+		{
+			var table = document.getElementById("tableodd");
+
+			for (i = 0;; i++)
+			{
+
+				if(table.rows[i].id % 2 ==0 )
+					table.rows[i].style.display ='none';
+			}
+
+        }
+
+
+	</script>
+
+</body>
+</html>
